@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+  </head>
+  <body>
+    <h1>Formulaire</h1>
+    <a href="index.html" title="Blog de vacances">Home</a>
+    <br />
+    <form action="#">
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" />
+      <hr />
+      <label for="prenom">Prénom</label>
+      <input type="text" id="prenom" autofocus />
+      <hr />
+      <label for="mail">Mail</label>
+      <input type="email" id="mail" />
+      <hr />
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" />
+      <hr />
+      <label for="mois">Quel mois préférez-vous pour le voyage ?</label>
+      <select name="" id="mois">
+        <option value="janvier">Janvier</option>
+        <option value="fevrier">Février</option>
+        <option value="mars">Mars</option>
+        <option value="avril">Avril</option>
+        <option value="mai">Mai</option>
+        <option value="juin">Juin</option>
+        <option value="juillet">Juillet</option>
+        <option value="aout">Août</option>
+        <option value="septembre">Septembre</option>
+        <option value="octobre">Octobre</option>
+        <option value="novembre">Novembre</option>
+        <option value="decembre">Décembre</option>
+      </select>
+      <br />
+      <label for="comments"></label>
+      <textarea
+        name=""
+        id="comments"
+        cols="30"
+        rows="10"
+        placeholder="votre avis sur le site..."
+      ></textarea>
+      <fieldset>
+        <legend>Genre</legend>
+        <input type="radio" name="genre" id="man" value="man" />
+        <label for="man">Homme</label>
+        <br />
+        <input type="radio" name="genre" id="woman" value="woman" />
+        <label for="woman">Femme</label>
+        <br />
+        <input type="radio" name="genre" id="other" value="other" />
+        <label for="other">Autres</label>
+      </fieldset>
+      <fieldset>
+        <legend>Villes de départ souhaités</legend>
+        <ul>
+          <li>
+            <label for="lille">Lille</label>
+            <input type="checkbox" id="lille" />
+          </li>
+          <li>
+            <label for="paris">Paris</label>
+            <input type="checkbox" id="paris" />
+          </li>
+          <li>
+            <label for="bruxelles">Bruxelles</label>
+            <input type="checkbox" id="bruxelles" />
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </body>
+</html>
